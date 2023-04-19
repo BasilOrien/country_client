@@ -30,7 +30,7 @@ function App() {
       })
       .catch((error) => {
         setOnline(false);
-        setConError("La aplicacion no pudo conectarse al servidor");
+        setConError("La aplicacion no pudo conectarse al servidor 2");
       });
   });
 
@@ -41,7 +41,7 @@ function App() {
 
   window.addEventListener("offline", () => {
     setOnline(false);
-    setConError("La aplicacion no pudo conectarse al servidor");
+    setConError("La aplicacion no pudo conectarse al servidor 2");
   });
 
   return !online ? (
