@@ -21,7 +21,8 @@ function App() {
     axios
       .get(mainUrl)
       .then((serverResponse) => {
-        if (serverResponse.data === "Server Ok") {
+        if (serverResponse.data) {
+          console.log(serverResponse);
           dispatch(getAllCountries());
           setOnline(true);
           setLoading(false);
