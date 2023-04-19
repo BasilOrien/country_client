@@ -5,13 +5,12 @@ import Home from "./components/Home/Home";
 import CountryDetails from "./components/CountryDetails/CountryDetails";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
-import { getAllCountries } from "./redux/actions";
+import { getAllCountries, mainUrl } from "./redux/actions";
 import { E404 } from "./components/E404/E404";
 import CreateActivity from "./components/Create/CreateActivity";
 import axios from "axios";
 import loadingSpinner from "./misc/img/Blackdove Spinner.gif";
 import Activities from "./components/Activities/Activities";
-
 function App() {
   const [online, setOnline] = useState(true);
   const [conError, setConError] = useState("");
@@ -20,7 +19,7 @@ function App() {
 
   useEffect(function () {
     axios
-      .get("http://localhost:3001")
+      .get(mainUrl)
       .then((serverResponse) => {
         if (serverResponse.data === "Server Ok") {
           dispatch(getAllCountries());
