@@ -1,0 +1,36 @@
+.container {
+  color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-height: 140px;
+  margin: auto;
+  background-color: yellow;
+  z-index: 100;
+  display: flex;
+  width: 100vmin;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 2vmin;
+  box-shadow: 0 0 10px black;
+}
+.container h2 {
+  flex: 1;
+  color: black;
+  margin-bottom: 2vmin;
+}
+.container button {
+  width: 100%;
+  padding: 1vmin;
+  border-radius: 20px;
+  margin-top: 2vmin;
+  background-color: black;
+  color: white;
+}
+.errorRow {
+  color: black;
+}

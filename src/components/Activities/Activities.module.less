@@ -1,0 +1,51 @@
+table {
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.527);
+}
+
+th,
+td {
+    padding: 0;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 3vmin;
+    user-select: none;
+ 
+}
+
+td {
+    text-align: left;
+    text-indent: 1vmin;
+    padding: 2vmin;
+    font-size: large;
+    &:hover {
+        background-color: rgb(255, 255, 134);
+    }
+}
+
+tbody>tr {
+    &:nth-child(even) {
+        background-color: lightgray;
+    }
+
+    &:hover {
+        background-color: yellow;
+    }
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}

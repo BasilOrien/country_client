@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: yellow;
+  box-shadow: 0 0 5px white;
+  padding: 2vmin;
+}
+.container h2 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 2vmin;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 5px gray;
+  background-color: white;
+  padding: 2vmin;
+  border-radius: 20px;
+}
+.container .article {
+  background-color: rgba(0, 0, 0, 0.623);
+  color: white;
+  text-shadow: 1px 1px black;
+  box-shadow: 0 0 5px black;
+  padding: 2vmin 1vmin;
+  padding-bottom: 0;
+  border-radius: 20px;
+}
+.container .article p {
+  text-indent: 1vmin;
+  margin-right: 1vmin;
+}
+.container .article p:first-child {
+  text-indent: 5vmin;
+}
+.container .article h4 {
+  text-align: center;
+}
+.container img {
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  width: 40vw;
+  margin-bottom: 1vmin;
+}
+.link {
+  color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.623);
+  padding: 1vmin 2vmin;
+  border-radius: 10px;
+}
+.activitiesUl {
+  display: flex;
+  padding: 1vmin;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 5px 0;
+}
+.backButton {
+  color: white;
+  background-color: black;
+  padding: 1vmin;
+  position: absolute;
+  left: 10px;
+  top: 7vw;
+  border-radius: 10px;
+}

@@ -1,0 +1,41 @@
+.card {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto 70% auto;
+  background-color: #ffff01;
+  box-shadow: 0 0 7px gray;
+  border-radius: 20px;
+  text-align: center;
+  margin: 1vmax;
+  overflow: hidden;
+  padding-bottom: 1vmin;
+  max-width: 220px;
+  font-size: 0.8rem;
+  min-width: 170px;
+}
+.infoContainer {
+  grid-row-start: 3;
+  padding: 1vmin;
+  margin-bottom: 1vmin;
+}
+.name {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 1vmin 1vmin 0;
+}
+.img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  background-color: #181819;
+  height: 100px;
+  box-shadow: 0 0 5px black;
+  margin-bottom: -3vmin;
+}
+.continent {
+  margin-bottom: 1vmin;
+}
