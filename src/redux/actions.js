@@ -8,7 +8,7 @@ import {
   QUERY_RESULTS,
 } from "./action-types";
 
-export const mainUrl = "https://basil-orien-country-api.vercel.app/";
+export const mainUrl = "https://basil-orien-country-api.vercel.app";
 
 export function getAllCountries() {
   return async function (dispatch) {
